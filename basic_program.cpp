@@ -7,7 +7,8 @@ unsigned long long factorial(int n)
 }
 unsigned long long fibonacci(int n)
 {
-    return n * n;
+    if (n <= 1) return n;
+    return fibonacci(n - 1) + fibonacci(n - 2);
 }
 bool isPrime(int num)
 {
